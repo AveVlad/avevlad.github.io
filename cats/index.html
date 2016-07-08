@@ -3,16 +3,29 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archieven | Development Blog</title>
+  <title>cats | Development Blog</title>
     <meta name="my_meta_tag" content="_">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Development Blog">
-<meta property="og:url" content="https://avevlad.github.io/archives/index.html">
+  <meta name="description" content="Overview
+
+
+This project was motivated by two things: a desire to learn more about neural net software and a desire to encourage the neighbors’ cats to hang out somewhere other than my front yard.The p">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cats">
+<meta property="og:url" content="https://avevlad.github.io/cats/index.html">
 <meta property="og:site_name" content="Development Blog">
+<meta property="og:description" content="Overview
+
+
+This project was motivated by two things: a desire to learn more about neural net software and a desire to encourage the neighbors’ cats to hang out somewhere other than my front yard.The p">
+<meta property="og:updated_time" content="2016-07-08T23:35:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Development Blog">
+<meta name="twitter:title" content="cats">
+<meta name="twitter:description" content="Overview
+
+
+This project was motivated by two things: a desire to learn more about neural net software and a desire to encourage the neighbors’ cats to hang out somewhere other than my front yard.The p">
   
     <link rel="alternate" href="/atom.xml" title="Development Blog" type="application/atom+xml">
   
@@ -61,58 +74,57 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/cats/" class="archive-article-date">
-  <time datetime="2016-07-08T23:00:00.000Z" itemprop="datePublished">Jul 9</time>
+        <section id="main"><article id="post-cats" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cats/" class="article-date">
+  <time datetime="2016-07-08T23:00:00.000Z" itemprop="datePublished">2016-07-09</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/cats/">cats</a>
+    <h1 class="article-title" itemprop="name">
+      cats
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/hello-world/" class="archive-article-date">
-  <time datetime="2016-07-08T22:24:27.000Z" itemprop="datePublished">Jul 9</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/hello-world/">Hello World 123</a>
-    </h1>
-  
+        <h4>Overview</h4>
 
-    </header>
+
+<p>This project was motivated by two things: a desire to learn more about neural net software and a desire to encourage the neighbors’ cats to hang out somewhere other than my front yard.<br>The project includes just three hardware components: an Nvidia Jetson TX1 board, a Foscam FI9800P IP camera, and a Particle Photon attached to a relay The camera is mounted on the side of the house aimed at the front yard. It communicates with a WIFI Access Point maintained by the Jetson sitting in the den near the front yard. The Photon and relay are mounted in the control box for my sprinkler system and are connected to a WIFI access point in the kitchen.</p>
+<p>In operation, the camera is configured to watch for changes in the yard. When something changes, the camera FTPs a set of 7 images, one per second, to the Jetson. A service running on the Jetson watches for inbound images, passing them to the Caffe deep learning neural network. If a cat is detected by the network, the Jetson signals the Photon’s server in the cloud, which sends a message to the Photon. The Photon responds by turning on the sprinklers for two minutes.</p>
+<p>Here, a cat wandered into the frame triggering the camera:</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://avevlad.github.io/cats/" data-id="ciqedrtzn000007mjko60qqpj" class="article-share-link">Delen</a>
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">Hello World 123</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
